@@ -6,7 +6,7 @@ try {
     let output = input
         .trim()
         .toLowerCase()
-        .replace(/([^0-9a-zA-Z-]+)/g, "-");
+        .replace(/([^0-9a-zA-Z-_]+)/g, "-");
     if (output.length > maxBranchLength) {
         output = output.substring(0, maxBranchLength);
     }
